@@ -1,4 +1,4 @@
-<table>
+<table class="table">
     <thead>
         <tr>
             <th>N.</th>
@@ -19,7 +19,7 @@
             <td>{{correo}}</td>
             <td>{{telefono}}</td>
             <td>{{edad}}</td>
-            <td><button>Eliminar</button><a href="/edit/{{_id}}">Actualizar</a></td>
+            <td><a href="/delete/{{_id}}" class="btn btn-danger">Eliminar<a href="/edit/{{_id}}" class="btn btn-info ms-1">Actualizar</a></td>
         </tr>
         {{/each}}
     </tbody>
