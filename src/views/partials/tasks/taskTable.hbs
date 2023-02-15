@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <tr>
+            <th>N.</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Telefono</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tasks}}
+        <tr>
+            <td>{{@index}}</td>
+            <td>{{nombre}}</td>
+            <td>{{apellido}}</td>
+            <td>{{correo}}</td>
+            <td>{{telefono}}</td>
+            <td>{{edad}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
