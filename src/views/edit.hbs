@@ -1,2 +1,29 @@
-<h1>Editando </h1>
-<h1>Hola</h1>
+<form action="/edit/{{task._id}}" method="POST">
+
+  <div class="">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" placeholder="nombre" value="{{task.nombre}}"/>
+  </div>
+
+  <div>
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellido" placeholder="Apellido" value="{{task.apellido}}"/>
+  </div>
+
+  <div>
+    <label for="correo">Correo electronico</label>
+    <input type="email" name="correo" placeholder="correo" value="{{task.correo}}"/>
+  </div>
+
+  <div>
+    <label for="telefono">Telefono</label>
+    <input type="tel" name="telefono" placeholder="telefono" value="{{task.telefono}}"/>
+  </div>
+
+  <div>
+    <label for="edad">Edad</label>
+    <input type="text" name="edad" placeholder="edad" value="{{task.edad}}"/>
+  </div>
+
+  <button>Actualizar</button>
+</form>
