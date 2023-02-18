@@ -1,4 +1,5 @@
-<div class="container mt-3">
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+  <h3>Formulario</h3>
   <form action="/task/add" method="POST">
 
     <div class="mb-3 mt-3">
@@ -7,7 +8,7 @@
         type="text"
         name="nombre"
         placeholder="nombre"
-        class="form-control"
+        class="form-control rounded-0 bg-dark text-white"
       />
     </div>
 
@@ -17,7 +18,7 @@
         type="text"
         name="apellido"
         placeholder="Apellido"
-        class="form-control"
+        class="form-control rounded-0 bg-dark text-white"
       />
     </div>
 
@@ -27,7 +28,7 @@
         type="email"
         name="correo"
         placeholder="correo"
-        class="form-control"
+        class="form-control rounded-0 bg-dark text-white"
       />
     </div>
 
@@ -37,19 +38,14 @@
         type="tel"
         name="telefono"
         placeholder="telefono"
-        class="form-control"
+        class="form-control rounded-0 bg-dark text-white"
       />
     </div>
 
     <div class="mb-3 mt-3">
       <label for="edad" class="form-label">Edad:</label>
-      <input type="text" name="edad" placeholder="edad" class="form-control" />
+      <input type="text" name="edad" placeholder="edad" class="form-control rounded-0 bg-dark text-white" />
     </div>
-
-    <div class="mx-auto">
-      <div class="container">
-        <button class="btn btn-success">Agregar</button>
-      </div>
-    </div>
+        <button class="btn btn-success btn-sm mt-2">Agregar</button>
   </form>
 </div>
