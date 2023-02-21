@@ -25,12 +25,9 @@ export const renderTaskEdit = async (req, res) => {
 }
 
 export const editTask = async (req, res) => {
-  try {
-    const task = await Task.findById(req.params.id).lean();
-    res.render("edit", { task });
-  } catch (error) {
-    console.log(error);
-  }
+  const { id } = req.params;
+  await Task.findByIdAndUpdate(id, req.body);
+  res.redirect("/");
 }
 
 export const deleteTask = async (req, res) => {
