@@ -14,3 +14,27 @@ export const addUser = async (req, res) => {
     console.log(error);
   }
 };
+
+export const renderTaskEdit = async (req, res) => {
+  try {
+    const task = await Task.findById(req.params.id).lean();
+    res.render("edit", { task });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export const editTask = async (req, res) => {
+  try {
+    const task = await Task.findById(req.params.id).lean();
+    res.render("edit", { task });
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export const deleteTask = async (req, res) => {
+  const { id } = req.params;
+  await Task.findByIdAndDelete(id);
+  res.redirect("/");
+}

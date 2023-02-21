@@ -1,7 +1,6 @@
 {
   "name": "crudmong",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js --exec babel-node",
@@ -23,5 +22,14 @@
     "@babel/preset-env": "^7.20.2",
     "babel-install": "2.1.0",
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodbame/crudmongo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rodbame/crudmongo/issues"
+  },
+  "homepage": "https://github.com/Rodbame/crudmongo#readme",
+  "description": ""
 }

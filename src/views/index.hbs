@@ -1,4 +1,25 @@
-<h1>CRUD de usuarios con MongoDB</h1>
-{{> tasks/taskForm }}
+<div class="container">
+    <div class="row">
 
-{{> tasks/taskTable }}
+         <div class="col-md-5">
+         {{> tasks/taskForm }}
+         </div>
+
+         <div class="col-md-7">
+         {{> tasks/taskTable }}
+         </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
+<script>
+          $(document).ready(function() {
+            $('#myTable').DataTable( {
+             language: {
+              url: 'https://cdn.datatables.net/plug-ins/1.13.2/i18n/es-MX.json'
+              }
+             } );
+          } );
+</script>
