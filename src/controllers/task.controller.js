@@ -26,12 +26,9 @@ export const renderTaskEdit = async (req, res) => {
 }
 //se encarga de tomar el id y actualizar y redireccionar al index
 export const editTask = async (req, res) => {
-  try {
-    const task = await Task.findById(req.params.id).lean();
-    res.render("edit", { task });
-  } catch (error) {
-    console.log(error);
-  }
+  const { id } = req.params;
+  await Task.findByIdAndUpdate(id, req.body);
+  res.redirect("/");
 }
 //se encarga de tomar el id y borrar y redireccionar al index
 export const deleteTask = async (req, res) => {
