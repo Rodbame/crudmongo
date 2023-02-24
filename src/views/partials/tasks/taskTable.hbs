@@ -1,3 +1,4 @@
+{{!-- Si hay algun registro va a mostrar la tabla --}}
 {{#if tasks}}
 <div class="text-white">
 <table class="table table-bordered table-hover table-dark" id="myTable" style="text:white;">
@@ -13,7 +14,8 @@
         </tr>
     </thead>
     <tbody>
-        {{#each tasks}}
+        
+        {{#each tasks}} {{!-- Es el ciclo que repite la cantidad de veces los campos que se tienen en la bd --}}
         <tr>
             <td>{{@index}}</td>
             <td>{{nombre}}</td>
@@ -21,14 +23,15 @@
             <td>{{correo}}</td>
             <td>{{telefono}}</td>
             <td>{{edad}}</td>
-            <td><a href="/delete/{{_id}}" class="btn btn-danger m-1">Eliminar<a href="/edit/{{_id}}" class="btn btn-primary ms-1">Actualizar</a></td>
+            <td><a href="/delete/{{_id}}" class="btn btn-danger m-1">Eliminar<a href="/edit/{{_id}}" class="btn btn-primary ms-1">Actualizar</a></td>{{!-- Redirecciona a la funcion de edit  --}}
         </tr>
 
 
         {{/each}}
     </tbody>
 </table>
-        {{else}}
+
+        {{else}}{{!-- si no se cumple la condicion del if se muestra un icono :( en lugar de la tabla--}}
         <div class="h100 d-flex align-items-center justify-content-center">
         <div class="text-center text-white">
             <h1> No hay registros</h1>

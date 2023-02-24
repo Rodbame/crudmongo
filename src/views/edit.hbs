@@ -1,5 +1,9 @@
-<div class="card card-body p-4 rounded-0 bg-dark text-white container" style="width:50%">
+<div
+  class="card card-body p-4 rounded-0 bg-dark text-white container"
+  style="width:50%"
+>
   <form action="/edit/{{task._id}}" method="POST">
+  {{! Se recibe el id del campo y redirecciona a la funcion que se desea realizar }}
 
     <div class="mb-3 mt-3">
       <label for="nombre" class="form-label">Nombre:</label>
@@ -7,7 +11,7 @@
         type="text"
         name="nombre"
         placeholder="nombre"
-        value="{{task.nombre}}"
+        value="{{task.nombre}}"{{! trae la informacion del campo nombre, deacuerdo al id seleccionado }}
         class="form-control rounded-0 bg-dark text-white"
       />
     </div>
@@ -18,7 +22,7 @@
         type="text"
         name="apellido"
         placeholder="Apellido"
-        value="{{task.apellido}}"
+        value="{{task.apellido}}"{{! trae la informacion del campo Apellido, deacuerdo al id seleccionado }}
         class="form-control rounded-0 bg-dark text-white"
       />
     </div>
@@ -29,7 +33,7 @@
         type="email"
         name="correo"
         placeholder="correo"
-        value="{{task.correo}}"
+        value="{{task.correo}}"{{! trae la informacion del campo correo, deacuerdo al id seleccionado }}
         class="form-control rounded-0 bg-dark text-white"
       />
     </div>
@@ -40,17 +44,23 @@
         type="tel"
         name="telefono"
         placeholder="telefono"
-        value="{{task.telefono}}"
+        value="{{task.telefono}}"{{! trae la informacion del campo nombre, deacuerdo al id seleccionado }}
         class="form-control rounded-0 bg-dark text-white"
       />
     </div>
 
     <div class="mb-3 mt-3">
       <label for="edad">Edad</label>
-      <input type="text" name="edad" placeholder="edad" value="{{task.edad}}" class="form-control rounded-0 bg-dark text-white"/>
+      <input
+        type="text"
+        name="edad"
+        placeholder="edad"
+        value="{{task.edad}}"
+        class="form-control rounded-0 bg-dark text-white"
+        />{{! tre la informacion del campo edad, deacuerdo al id seleccionado }}
     </div>
 
-    
-    <button class="btn btn-success btn-sm mt-2 center-block">Actualizar</button>
+    <button class="btn btn-success btn-sm mt-2 center-block">Actualizar</button> 
+    {{!-- Envia el formulario actualizado --}}
   </form>
 </div>
