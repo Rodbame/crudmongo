@@ -1,5 +1,6 @@
-import { Schema, model } from "mongoose";
+import { Schema, model } from "mongoose";//exporta el modulo esquema y el modelo
 
+//funcion que crea el esquema, del como lo recibe la base de datos
 const taskSchema = new Schema(
   {
     nombre: {
@@ -35,4 +36,5 @@ const taskSchema = new Schema(
   }
 );
 
+//exporta el modelo(esquema) que acabamos de hacer
 export default model("usuario", taskSchema);

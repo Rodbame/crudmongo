@@ -1,7 +1,8 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose"); //modulo que permite conectar a Mongodb
 
-main().catch((err) => console.log(err));
+main().catch((err) => console.log(err)); //try catch para que muestre los errores de conexion si llegan a haber
 
+//Funcion que permite entrar a mongo y a la base de datos en especifico por medio de Mongo Atlas
 async function main() {
   try {
     mongoose.set("strictQuery", false);
