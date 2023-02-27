@@ -1,5 +1,6 @@
 import app from "./app"; //importa el archivo app.js donde se tienen las vistas y plantilla en general
 import './database'//importa el archivo de database.js donde se tiene las conexiones a la base da datos
+
 import { PORT } from  "./config";
 
 
