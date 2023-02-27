@@ -1,0 +1,26 @@
+{{!-- pone un contenedor --}}
+<div class="container">
+    <div class="row">
+
+         <div class="col-md-5">
+         {{> tasks/taskForm }} {{!-- Se trae el formulario del archivo taskForm.hbs --}}
+         </div>
+
+         <div class="col-md-7"> 
+         {{> tasks/taskTable }} {{!-- Se trael el archivo taskTable.hbs --}}
+         </div>
+    </div>
+</div>
+{{!-- Script de funcionamiento para datatables --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
+<script>
+          $(document).ready(function() {
+            $('#myTable').DataTable( {
+             language: {
+              url: 'https://cdn.datatables.net/plug-ins/1.13.2/i18n/es-MX.json'
+              }
+             } );
+          } );
+</script>
