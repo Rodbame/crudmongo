@@ -22,11 +22,11 @@ select.form-select.form-select-sm{
     background-color: transparent !important;
     color: #6c757d;
 }
-li#myTable_previous.paginate_button.page-item.previous.disabled{
+li.paginate_button.page-item.previous.disabled{
     color: #6c757d;
     background-color: #212529;
 }
-li#myTable_next.paginate_button.page-item.next.disabled{
+li.paginate_button.page-item.next.disabled{
     color: #6c757d;
     background-color: #212529;
 }
