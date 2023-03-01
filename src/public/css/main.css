@@ -23,15 +23,15 @@ select.form-select.form-select-sm{
     color: #6c757d;
 }
 li.paginate_button.page-item.previous.disabled{
-    color: #6c757d;
-    background-color: #212529;
+    color: #6c757d !important;
+    background-color: #212529 !important;
 }
 li.paginate_button.page-item.next.disabled{
-    color: #6c757d;
-    background-color: #212529;
+    color: #6c757d !important;
+    background-color: #212529 !important;
 }
 
 a.page-link{
-    color: #6c757d;
-    background-color: #212529;
+    color: #6c757d !important;
+    background-color: #212529 !important;
 }
