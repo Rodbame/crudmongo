@@ -9,7 +9,7 @@ body{
     background-color: transparent !important;
     color: white !important;
 }
-input::placeholder .form-control .form-control-sm{
+input::placeholder.form-control.form-control-sm{
     color: white !important;
 }
 input::placeholder{
