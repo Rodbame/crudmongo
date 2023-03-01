@@ -5,3 +5,9 @@ body{
 .bg-black{
     background: #111111;
 }
+#myTable_filter .form-control.form-control-sm{
+    background-color: transparent !important;
+}
+input::placeholder{
+    color: #444;
+}
