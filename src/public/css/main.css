@@ -30,8 +30,19 @@ li.paginate_button.page-item.next.disabled{
     color: #9FA3A9 !important;
     background-color: #212529 !important;
 }
-
 a.page-link{
     color: #9FA3A9 !important;
     background-color: #212529 !important;
+}
+button.btn.btn-success.btn-sm.mt-2{
+    background-color: #00722e;
+    color: #9FA3A9;
+}
+a.btn.btn-danger.m-1{
+    background-color: #9C0720;
+    color: #9FA3A9;
+}
+a.btn.btn-primary.ms-1{
+    background-color: #213D91;
+    color: #9FA3A9;
 }
