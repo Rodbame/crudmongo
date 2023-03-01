@@ -3,18 +3,21 @@ body{
 }
 
 .bg-black{
-    background: #111111;
+    background: #2B2B2B;
 }
 #myTable_filter .form-control.form-control-sm{
     background-color: transparent !important;
-    color: white !important;
+    color: #9FA3A9 !important;
 }
 input::placeholder.form-control.form-control-sm{
     color: white !important;
 }
 input::placeholder{
-    color: white !important;
+    color: #9FA3A9 !important;
 }
 select{
     background-color: #111111;
+}
+select.form-select.form-select-sm{
+    background-color: #9FA3A9;
 }
