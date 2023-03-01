@@ -19,5 +19,19 @@ select{
     background-color: #111111;
 }
 select.form-select.form-select-sm{
-    background-color: #9FA3A9;
+    background-color: transparent !important;
+    color: #6c757d;
+}
+li#myTable_previous.paginate_button.page-item.previous.disabled{
+    color: #6c757d;
+    background-color: #212529;
+}
+li#myTable_next.paginate_button.page-item.next.disabled{
+    color: #6c757d;
+    background-color: #212529;
+}
+
+a.page-link{
+    color: #6c757d;
+    background-color: #212529;
 }
