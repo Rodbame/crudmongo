@@ -8,6 +8,9 @@ body{
 #myTable_filter .form-control.form-control-sm{
     background-color: transparent !important;
 }
+input.form-control.form-control-sm::placeholder{
+    color: white !important;
+}
 input::placeholder{
     color: white !important;
 }
