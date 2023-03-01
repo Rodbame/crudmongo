@@ -9,7 +9,7 @@ body{
     background-color: transparent !important;
 }
 input::placeholder{
-    color: #444 !important;
+    color: white !important;
 }
 select{
     background-color: #111111;
